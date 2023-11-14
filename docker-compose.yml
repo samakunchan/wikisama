@@ -1,0 +1,27 @@
+version: "3"
+services:
+
+  db:
+    container_name: wiki_db
+    image: postgres:15-alpine
+    env_file:
+      - .docker-postgres.env # Créer le fichier `.docker-postgres.env`   avec le fichier `.docker-postgres-example.env`
+    logging:
+      driver: "none"
+    restart: unless-stopped
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  wiki:
+    container_name: wiki_sama
+    image: ghcr.io/requarks/wiki:2
+    depends_on:
+      - db
+    env_file:
+      - .docker-wiki-sama.env # Créer le fichier `.docker-wiki-sama.env`   avec le fichier `.docker-wiki-sama-example.env`
+    restart: unless-stopped
+    ports:
+      - "3010:3000"
+
+volumes:
+  db-data:
