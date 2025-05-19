@@ -1,9 +1,8 @@
-version: "3"
 services:
 
   db:
-    container_name: wiki_db
-    image: postgres:15-alpine
+    container_name: postgres_17_wiki_db
+    image: postgres:17-alpine
     env_file:
       - .docker-postgres.env # Créer le fichier `.docker-postgres.env`   avec le fichier `.docker-postgres-example.env`
     logging:
@@ -14,7 +13,7 @@ services:
 
   wiki:
     container_name: wiki_sama
-    image: ghcr.io/requarks/wiki:2
+    image: ghcr.io/requarks/wiki:2.5
     depends_on:
       - db
     env_file:
