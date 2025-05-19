@@ -20,3 +20,17 @@ cp .docker-wiki-sama-example.env .docker-wiki-sama.env
 ```sh
 docker-compose up -d
 ```
+
+## Synchronisation github
+
+Dans `Storage`:
+- Authentication Type: `Basic` (IMPORTANT)
+- Repository Uri : `https://github.com/samakunchan/documentation`
+- Branch : `main`
+- SSH Private Key Mode : `path`
+- (vide)
+- (vide)
+- Username : `samakunchan`
+- Password / PAT : `ghp_xxxxxx`
+- Default Author Email : `cedric.badjah@gmail.com`
+- Default Author Name : `Samakunchan`
