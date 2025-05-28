@@ -38,8 +38,8 @@ Dans `Storage`:
 ## Synchronisation keycloak
 Pour configurer l'authentification avec Keycloak de wikijs
 - Host : `https://secure-connect.devpapangue.com`
-- Realm : ppg-connect
-- Client ID : documentation
+- Realm : `ppg-connect`
+- Client ID : `documentation`
 - Client Secret : Fournis pas keycloak
 - Authorization Endpoint Url : `https://secure-connect.devpapangue.com/realms/ppg-connect/protocol/openid-connect/auth`
 - Token Endpoint Url : `https://secure-connect.devpapangue.com/realms/ppg-connect/protocol/openid-connect/token`
