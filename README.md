@@ -37,14 +37,14 @@ Dans `Storage`:
 
 ## Synchronisation keycloak
 Pour configurer l'authentification avec Keycloak de wikijs
-- Host : https://secure-connect.devpapangue.com
+- Host : `https://secure-connect.devpapangue.com`
 - Realm : ppg-connect
 - Client ID : documentation
 - Client Secret : Fournis pas keycloak
-- Authorization Endpoint Url : https://secure-connect.devpapangue.com/realms/ppg-connect/protocol/openid-connect/auth
-- Token Endpoint Url
-- User Info Endpoint Url
-- Logout Endpoint Url
+- Authorization Endpoint Url : `https://secure-connect.devpapangue.com/realms/ppg-connect/protocol/openid-connect/auth`
+- Token Endpoint Url : `https://secure-connect.devpapangue.com/realms/ppg-connect/protocol/openid-connect/token`
+- User Info Endpoint Url : `https://secure-connect.devpapangue.com/realms/ppg-connect/protocol/openid-connect/userinfo`
+- Logout Endpoint Url : `https://secure-connect.devpapangue.com/realms/ppg-connect/protocol/openid-connect/logout`
 - **Autoriser l'auto-inscription**
 - **Créer un groupe afin d'ajouter les utilisateurs utilisant cette authentification à un groupe.***
 
