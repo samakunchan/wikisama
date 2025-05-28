@@ -34,3 +34,18 @@ Dans `Storage`:
 - Password / PAT : `ghp_xxxxxx`
 - Default Author Email : `cedric.badjah@gmail.com`
 - Default Author Name : `Samakunchan`
+
+## Synchronisation keycloak
+Pour configurer l'authentification avec Keycloak de wikijs
+- Host : https://secure-connect.devpapangue.com
+- Realm : ppg-connect
+- Client ID : documentation
+- Client Secret : Fournis pas keycloak
+- Authorization Endpoint Url : https://secure-connect.devpapangue.com/realms/ppg-connect/protocol/openid-connect/auth
+- Token Endpoint Url
+- User Info Endpoint Url
+- Logout Endpoint Url
+- **Autoriser l'auto-inscription**
+- **Créer un groupe afin d'ajouter les utilisateurs utilisant cette authentification à un groupe.***
+
+NB : en bas de page, il y a des infos à mettre dans Keycloak comme le redirect_uri (ex : `https://documentation.devpapangue.com/login/xxx-xxx-xxx/callback`)
